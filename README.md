@@ -61,6 +61,17 @@ python setup.py \
 curl -X POST "https://gitlab-bot.your-domain.com/backfill?project_id=YOUR_PROJECT_ID"
 ```
 
+## Nachträgliche Aktualisierung
+
+Label-Farben und fehlende Labels auf einem bestehenden Projekt aktualisieren (ohne Webhooks anzufassen):
+
+```bash
+python setup.py \
+  --token YOUR_GITLAB_TOKEN \
+  --project-id YOUR_PROJECT_ID \
+  --update-colors
+```
+
 ## Mehrere Projekte
 
 Der Analyzer unterstützt mehrere Projekt-IDs gleichzeitig:
